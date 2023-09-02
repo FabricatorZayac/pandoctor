@@ -1,4 +1,4 @@
-SRCS     := $(shell find . -name "*.md" $(shell printf "! -name %s " $(IGNORELIST)))
+SRCS     := $(shell find . -name "*.md" $(shell printf "! -name %s " $(IGNORE)))
 TARGETS  := $(SRCS:%.md=%.html)
 
 .PHONY: all clean serve

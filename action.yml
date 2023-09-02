@@ -10,5 +10,13 @@ inputs:
     description: Specify pandoc html template file
     required: false
 runs:
-  using: node20
-  main: index.js
+  using: "composite"
+  steps:
+    - name: Set up pandoc
+      uses: nikeee/setup-pandoc@v1
+    - name: Convert markdown into html
+      shell: bash
+      env:
+        IGNORE: ${{ inputs.ignore }}
+        TEMPLATE: ${{ inputs.template }}
+      run: make all purge-deploy
