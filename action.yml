@@ -10,6 +10,7 @@ inputs:
   template:
     description: Specify pandoc html template file
     required: true
+    default: ${{ github.action_path }}/dummy.html
 runs:
   using: "composite"
   steps:
