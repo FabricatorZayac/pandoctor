@@ -14,6 +14,8 @@ runs:
   steps:
     - name: Set up pandoc
       uses: nikeee/setup-pandoc@v1
+    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash
     - name: Convert markdown into html
       shell: bash
       env:
