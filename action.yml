@@ -5,10 +5,11 @@ description: Converts .md files into .html
 inputs:
   ignore:
     description: Specify files to not convert
-    required: false
+    required: true
+    default: README.md
   template:
     description: Specify pandoc html template file
-    required: false
+    required: true
 runs:
   using: "composite"
   steps:
