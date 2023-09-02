@@ -1,0 +1,14 @@
+---
+name: Pandoctor
+description: Converts .md files into .html
+
+inputs:
+  ignore:
+    description: Specify files to not convert
+    required: false
+  template:
+    description: Specify pandoc html template file
+    required: false
+runs:
+  using: node20
+  main: index.js

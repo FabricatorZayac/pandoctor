@@ -1,0 +1,9 @@
+{
+  "name": "pandoctor",
+  "module": "src/index.js",
+  "type": "module",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1"
+  }
+}
