@@ -9,7 +9,7 @@ all: $(TARGETS)
 	@if [ $(TEMPLATE) = "" ]; then\
 		pandoc $< -o $@;\
 	else\
-		pandoc --template=$(TEMPLATE) $< -o $@;\
+		pandoc $< --template=$(TEMPLATE) --metadata title="..." -o $@;\
 	fi
 
 # DON'T USE OUTSIDE OF PAGES DEPLOYMENT

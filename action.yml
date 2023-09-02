@@ -9,8 +9,7 @@ inputs:
     default: README.md
   template:
     description: Specify pandoc html template file
-    required: true
-    default: ${{ github.action_path }}/dummy.html
+    required: false
 runs:
   using: "composite"
   steps:
