@@ -6,7 +6,11 @@ TARGETS  := $(SRCS:%.md=%.html)
 all: $(TARGETS)
 
 %.html: %.md $(TEMPLATE)
-	pandoc --template=$(TEMPLATE) $< -o $@
+	@if [ $(TEMPLATE) = "" ]; then\
+		pandoc $< -o $@\
+	else\
+		pandoc --template=$(TEMPLATE) $< -o $@\
+	fi
 
 # DON'T USE OUTSIDE OF PAGES DEPLOYMENT
 purge-deploy: all
