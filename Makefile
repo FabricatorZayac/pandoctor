@@ -7,9 +7,9 @@ all: $(TARGETS)
 
 %.html: %.md $(TEMPLATE)
 	@if [ $(TEMPLATE) = "" ]; then\
-		pandoc $< -o $@\
+		pandoc $< -o $@;\
 	else\
-		pandoc --template=$(TEMPLATE) $< -o $@\
+		pandoc --template=$(TEMPLATE) $< -o $@;\
 	fi
 
 # DON'T USE OUTSIDE OF PAGES DEPLOYMENT
