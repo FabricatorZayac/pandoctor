@@ -1,6 +1,6 @@
-### Simplest possible static page generator
+# Simplest possible static page generator
 
-The scientists (me) have spent years (approximately a day) in a lab (my room)
+The scientists (me) have spent years (around 2 hours) in a lab (my room)
 perfecting the greatest static page generator known to man (a single makefile)
 and now I can proudly introduce to you - Pandoctor
 
