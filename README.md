@@ -1,8 +1,8 @@
 ### Simplest possible static page generator
 
-The scientists have spent [approximately a day] in a lab perfecting the
-greatest static page generator known to man and now I can proudly introduce to
-you - Pandoctor
+The scientists (me) have spent years (approximately a day) in a lab (my room)
+perfecting the greatest static page generator known to man (a single makefile)
+and now I can proudly introduce to you - Pandoctor
 
 Just make a workflow like this and you will get a github page that mirrors your
 repo with html instead of md files!
